@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>To Do Tracker</h1>
+        <input type="text" id="taskInput" placeholder="Enter the name of the task">
+        <div>
+            <button class="add-btn" onclick="addTask()">➕ Add</button>
+            <button class="reset-btn" onclick="resetTasks()">❌ Reset</button>
+            <button class="sort-btn" onclick="sortTasks()">↕ Sort</button>
+            <button class="cleanup-btn" onclick="cleanupTasks()">🗑 Cleanup</button>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
